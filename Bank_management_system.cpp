@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
 #include<iostream>
+
+using namespace std;
+
 class bank{
     char name[100],address[100],Y;
     int balance;
@@ -9,6 +12,7 @@ class bank{
     void deposite_money();
     void withdraw_money();
     void display_money();
+    
     };
     void bank :: open_account(){
         cout<<"Enter your full name :: ";
@@ -25,7 +29,14 @@ class bank{
         }
         void deposite :: diposite_money()
         {
-            
+          int a;
+          cout<<"Enter how much you deposite :: "; 
+          cin>>a;
+          balance+=a;
+          cout<<"Total ammout you deposite :: \t "<< balance;
+
+
+
         }
 int main()
 {
