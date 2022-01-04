@@ -54,7 +54,7 @@ class bank{
 
 int main()
 {
-  int ch;
+  int ch,x;
   bank obj;
   do{
 
@@ -83,9 +83,18 @@ int main()
          obj.display_account();
          break;
           case 5:
-          if()
-    }
-
+          if(ch==5){
+            exit(1);
+          }
+          default:
+                        cout<<"This is not exist try again \n ";
+                      }
+                        cout<<"\n do you want to select next option then press :: Y \n ";
+                        cout<<"if you want to exit then press :: N ";
+              x=getch();
+              if(x=='n' ||x=='N')
+                  exit(0);
+  }while(x=='y' || x=='Y');
     getch();
     return 0;
     
