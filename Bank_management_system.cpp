@@ -11,7 +11,7 @@ class bank{
     void open_account();
     void deposite_money();
     void withdraw_money();
-    void display_money();
+    void display_account();
     
     };
     void bank :: open_account(){
@@ -34,10 +34,25 @@ class bank{
           cin>>a;
           balance+=a;
           cout<<"Total ammout you deposite :: \t "<< balance;
+       }
+
+       void bank:: display_account(){
+         cout<<"Your full name ::\t" <<name;
+         cout<<"Your address :: \t "<<address;
+         cout<<"Type of account that you open :: \t"<<Y;
+         cout<<"Amount you deposite :: \t"<<balance;
+       }
+          void bank :: withdraw_money(){
+              float amount;
+              cout<<"\n withdraw :: ";
+              cout<<"Enter amount to withdraw ::";
+              cin>>amount;
+
+          }
 
 
 
-        }
+
 int main()
 {
     cout<<"1) Open account\n";
